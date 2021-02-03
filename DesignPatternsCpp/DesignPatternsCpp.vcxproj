@@ -138,10 +138,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Grid.cpp" />
+    <ClCompile Include="src\Space.cpp" />
+    <ClCompile Include="src\Strategy\Move.cpp" />
+    <ClCompile Include="src\Strategy\Pathfinding.cpp" />
     <ClCompile Include="src\Cardgame.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Grid.h" />
+    <ClInclude Include="src\Space.h" />
+    <ClInclude Include="src\Strategy\Move.h" />
+    <ClInclude Include="src\Strategy\Pathfinding.h" />
     <ClInclude Include="src\Cardgame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
