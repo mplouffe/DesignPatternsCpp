@@ -138,18 +138,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp" />
+    <ClCompile Include="src\Strategy\DuckExample\Duck\DecoyDuck.cpp" />
+    <ClCompile Include="src\Strategy\DuckExample\Duck\RedHeadDuck.cpp" />
     <ClCompile Include="src\Grid.cpp" />
     <ClCompile Include="src\Space.cpp" />
-    <ClCompile Include="src\Strategy\Move.cpp" />
-    <ClCompile Include="src\Strategy\Pathfinding.cpp" />
+    <ClCompile Include="src\Strategy\DuckExample\Duck\MallardDuck.cpp" />
+    <ClCompile Include="src\Strategy\PathfindingExample\Move.cpp" />
+    <ClCompile Include="src\Strategy\PathfindingExample\Pathfinding.cpp" />
     <ClCompile Include="src\Cardgame.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Strategy\DuckExample\Duck\RubberDuck.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Duck\DecoyDuck.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Duck\RedHeadDuck.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Duck\Duck.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Duck\MallardDuck.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Fly\FlyNoWay.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Fly\FlyWithWings.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Fly\FlyBehavior.h" />
     <ClInclude Include="src\Grid.h" />
     <ClInclude Include="src\Space.h" />
-    <ClInclude Include="src\Strategy\Move.h" />
-    <ClInclude Include="src\Strategy\Pathfinding.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Quack\MuteQuack.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Quack\Quack.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Quack\QuackBehavior.h" />
+    <ClInclude Include="src\Strategy\DuckExample\Quack\Squeak.h" />
+    <ClInclude Include="src\Strategy\PathfindingExample\Move.h" />
+    <ClInclude Include="src\Strategy\PathfindingExample\Pathfinding.h" />
     <ClInclude Include="src\Cardgame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
