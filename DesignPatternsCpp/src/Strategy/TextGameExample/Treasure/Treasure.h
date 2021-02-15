@@ -9,8 +9,8 @@ private:
 public:
 	Treasure(std::string name, int value);
 	Treasure(const Treasure& copy);
-	~Treasure() { std::cout << "Treasure Destructor called." << std::endl; };
+	~Treasure() { };
 	bool operator== (const Treasure& rhs);
-	int GetValue();
-	std::string GetName();
+	const int GetValue() const;
+	const std::string GetName() const;
 };

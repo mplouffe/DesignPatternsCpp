@@ -1,12 +1,16 @@
 #include "Item.h"
 
-Item::Item(std::string name, int value, ItemType type)
-	:name{ name }, value { value }, type { type }
+Item::Item(std::string name, int value, ItemType type, int propertyValue)
+	:Treasure(name, value), type { type }, propertyValue { propertyValue }
 { }
 
-int Item::UseItem()
+Item::Item(const Item& copy)
+	:Treasure(copy), type { copy.type}, propertyValue { copy.propertyValue }
+{ }
+
+int Item::GetPropertyValue()
 {
-	return value;
+	return propertyValue;
 }
 
 ItemType Item::GetType()
@@ -16,5 +20,7 @@ ItemType Item::GetType()
 
 bool Item::operator==(const Item& rhs)
 {
-	return ((name == rhs.name) && (value == rhs.value) && (type == rhs.type));
+	return Treasure::operator==(rhs) &&
+			type == rhs.type &&
+			propertyValue == rhs.propertyValue;
 }

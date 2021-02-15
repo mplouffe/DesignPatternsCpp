@@ -13,12 +13,12 @@ bool Treasure::operator==(const Treasure& rhs)
 	return ((name == rhs.name) && (value == rhs.value));
 }
 
-int Treasure::GetValue()
+const int Treasure::GetValue() const
 {
 	return value;
 }
 
-std::string Treasure::GetName()
+const std::string Treasure::GetName() const
 {
 	return name;
 }

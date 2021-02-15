@@ -18,4 +18,5 @@ public:
 	bool dropTreasure(int);
 	bool dropItem(int);
 	void listTreasure();
+	void listItems();
 };

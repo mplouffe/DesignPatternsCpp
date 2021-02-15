@@ -34,11 +34,13 @@ bool Hunter::dropItem(int itemIndex)
 	Item* item = loot->removeItem(itemIndex);
 	if (item != nullptr)
 	{
-		// delete item;
+		std::cout << "Dropping " << item->GetName() << " onto the ground." << std::endl;
+		delete item;
 		return true;
 	}
 	else
 	{
+		std::cout << "You can't find that in your bag." << std::endl;
 		return false;
 	}
 }
@@ -48,18 +50,27 @@ bool Hunter::dropTreasure(int treasureIndex)
 	Treasure* treasure = loot->removeTreasure(treasureIndex);
 	if (treasure != nullptr)
 	{
+		std::cout << "Dropping " << treasure->GetName() << " onto the ground." << std::endl;
 		delete treasure;
 		return true;
 	}
 	else
 	{
+		std::cout << "You can't find that in your bag." << std::endl;
 		return false;
 	}
 }
 
 void Hunter::listTreasure()
 {
-	std::cout << "Listing Treasures..." << std::endl;
-	auto treasures = loot->getTreasureList();
-	std::cout << "Treasures size: " << treasures->size() << std::endl;
+	std::cout << std::endl;
+	loot->listTreasures();
+	std::cout << std::endl;
+}
+
+void Hunter::listItems()
+{
+	std::cout << std::endl;
+	loot->listItems();
+	std::cout << std::endl;
 }

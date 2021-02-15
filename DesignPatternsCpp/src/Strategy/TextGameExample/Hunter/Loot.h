@@ -9,15 +9,15 @@ class Loot
 private:
 	std::list<Treasure>* treasures;
 	std::list<Item>* items;
-	int maxLootCapacity = 10;
-	int maxItemCapacity = 5;
+	unsigned int maxLootCapacity = 10;
+	unsigned int maxItemCapacity = 5;
 public:
 	Loot();
 	~Loot();
 	bool addTreasure(const Treasure&);
 	bool addItem(const Item&);
-	Treasure* removeTreasure(int treasureIndex);
-	Item* removeItem(int itemIndex);
-	const std::list<Treasure>* getTreasureList();
-	const std::list<Item>& getItemList();
+	Treasure* removeTreasure(unsigned int treasureIndex);
+	Item* removeItem(unsigned int itemIndex);
+	void listTreasures();
+	void listItems();
 };

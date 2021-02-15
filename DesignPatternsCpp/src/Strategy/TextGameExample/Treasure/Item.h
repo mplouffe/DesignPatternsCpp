@@ -1,18 +1,19 @@
 #pragma once
 #include <string>
+#include "Treasure.h"
 
 enum ItemType { heal, damage };
 
-class Item
+class Item : public Treasure
 {
 private:
-	std::string name;
-	int value;
+	int propertyValue;
 	ItemType type;
 public:
-	Item(std::string name, int value, ItemType type);
+	Item(std::string name, int value, ItemType type, int propertyValue);
+	Item(const Item& copy);
 	~Item() { };
 	bool operator== (const Item& rhs);
-	int UseItem();
+	int GetPropertyValue();
 	ItemType GetType();
 };

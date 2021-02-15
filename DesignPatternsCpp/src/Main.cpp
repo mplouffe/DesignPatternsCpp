@@ -41,6 +41,7 @@ void TestHunterLootSystem()
 	hunter->dropTreasure(0);
 	hunter->listTreasure();
 	std::cout << "End of method" << std::endl;
+	delete hunter;
 }
 
 int main()
