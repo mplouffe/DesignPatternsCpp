@@ -3,6 +3,8 @@
 #include "Strategy\DuckExample\Duck\DecoyDuck.h"
 #include "Strategy\DuckExample\Duck\RubberDuck.h"
 
+#include "Strategy\TextGameExample\Hunter\Hunter.h"
+
 void TestDuckStrategyPattern()
 {
 	Duck* duck01 = new MallardDuck();
@@ -28,13 +30,18 @@ void TestDuckStrategyPattern()
 	duck04->performFly();
 	duck04->performQuack();
 	delete duck04;
-	
-	
+}
 
+void TestHunterLootSystem()
+{
+	Hunter* hunter = new Hunter();
+	Treasure* mandolin = new Treasure("Mandolin", 100);
+	hunter->collectTreasure(*mandolin);
+	hunter->dropTreasure(0);
 }
 
 int main()
 {
-	TestDuckStrategyPattern();
+	TestHunterLootSystem();
 	return 0;
 }

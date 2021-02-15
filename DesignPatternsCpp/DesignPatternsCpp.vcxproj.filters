@@ -39,10 +39,22 @@
     <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\PathfindingExample\Move.cpp">
+    <ClCompile Include="src\Strategy\TextGameExample\TextGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\PathfindingExample\Pathfinding.cpp">
+    <ClCompile Include="src\Strategy\TextGameExample\Room\Room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Treasure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Loot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Hunter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,10 +104,25 @@
     <ClInclude Include="src\Strategy\DuckExample\Duck\RubberDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\PathfindingExample\Move.h">
+    <ClInclude Include="src\Strategy\TextGameExample\TextGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\PathfindingExample\Pathfinding.h">
+    <ClInclude Include="src\Strategy\TextGameExample\Monster\Monster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Treasure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Hunter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Room\Room.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Loot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

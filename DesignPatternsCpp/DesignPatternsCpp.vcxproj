@@ -138,18 +138,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Hunter.cpp" />
+    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Loot.cpp" />
+    <ClCompile Include="src\Strategy\TextGameExample\Room\Room.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\DecoyDuck.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\RedHeadDuck.cpp" />
     <ClCompile Include="src\Grid.cpp" />
     <ClCompile Include="src\Space.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\MallardDuck.cpp" />
-    <ClCompile Include="src\Strategy\PathfindingExample\Move.cpp" />
-    <ClCompile Include="src\Strategy\PathfindingExample\Pathfinding.cpp" />
     <ClCompile Include="src\Cardgame.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Strategy\TextGameExample\TextGame.cpp" />
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Item.cpp" />
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Treasure.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Loot.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Hunter.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\Monster\Monster.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\Room\Room.h" />
     <ClInclude Include="src\Strategy\DuckExample\Duck\RubberDuck.h" />
     <ClInclude Include="src\Strategy\DuckExample\Duck\DecoyDuck.h" />
     <ClInclude Include="src\Strategy\DuckExample\Duck\RedHeadDuck.h" />
@@ -164,9 +172,10 @@
     <ClInclude Include="src\Strategy\DuckExample\Quack\Quack.h" />
     <ClInclude Include="src\Strategy\DuckExample\Quack\QuackBehavior.h" />
     <ClInclude Include="src\Strategy\DuckExample\Quack\Squeak.h" />
-    <ClInclude Include="src\Strategy\PathfindingExample\Move.h" />
-    <ClInclude Include="src\Strategy\PathfindingExample\Pathfinding.h" />
     <ClInclude Include="src\Cardgame.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\TextGame.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Item.h" />
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Treasure.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
