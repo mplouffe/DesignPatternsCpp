@@ -38,11 +38,13 @@ bool Loot::addItem(const Item& item)
 Treasure* Loot::removeTreasure(int treasureIndex)
 {
 	std::cout << "Removing Treasure..." << std::endl;
-	if (treasures->size() < treasureIndex)
+	if (treasures->size() > treasureIndex)
 	{
 		std::list<Treasure>::iterator treasure = std::next(treasures->begin(), treasureIndex);
+		Treasure* returnTreasure = new Treasure(*treasure);
 		treasures->remove(*treasure);
-		return &(*treasure);
+		std::cout << "Returning Treasure..." << std::endl;
+		return returnTreasure;
 	}
 	else
 	{
@@ -52,7 +54,7 @@ Treasure* Loot::removeTreasure(int treasureIndex)
 
 Item* Loot::removeItem(int itemIndex)
 {
-	if (items->size() < itemIndex)
+	if (items->size() > itemIndex)
 	{
 		std::list<Item>::iterator item = std::next(items->begin(), itemIndex);
 		items->remove(*item);
@@ -64,9 +66,9 @@ Item* Loot::removeItem(int itemIndex)
 	}
 }
 
-const std::list<Treasure>& Loot::getTreasureList()
+const std::list<Treasure>* Loot::getTreasureList()
 {
-	return *treasures;
+	return treasures;
 }
 
 const std::list<Item>& Loot::getItemList()

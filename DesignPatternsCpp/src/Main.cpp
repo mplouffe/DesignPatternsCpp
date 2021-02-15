@@ -37,7 +37,10 @@ void TestHunterLootSystem()
 	Hunter* hunter = new Hunter();
 	Treasure* mandolin = new Treasure("Mandolin", 100);
 	hunter->collectTreasure(*mandolin);
+	hunter->listTreasure();
 	hunter->dropTreasure(0);
+	hunter->listTreasure();
+	std::cout << "End of method" << std::endl;
 }
 
 int main()

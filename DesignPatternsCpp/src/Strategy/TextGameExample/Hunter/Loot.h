@@ -13,11 +13,11 @@ private:
 	int maxItemCapacity = 5;
 public:
 	Loot();
-	~Loot() { };
+	~Loot();
 	bool addTreasure(const Treasure&);
 	bool addItem(const Item&);
 	Treasure* removeTreasure(int treasureIndex);
 	Item* removeItem(int itemIndex);
-	const std::list<Treasure>& getTreasureList();
+	const std::list<Treasure>* getTreasureList();
 	const std::list<Item>& getItemList();
 };

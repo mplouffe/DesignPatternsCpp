@@ -6,7 +6,7 @@ class Hunter
 {
 private:
 	int hitPoints;
-	Loot *loot;
+	Loot* loot;
 public:
 	Hunter();
 	~Hunter();
@@ -17,4 +17,5 @@ public:
 	int useItem(int);
 	bool dropTreasure(int);
 	bool dropItem(int);
+	void listTreasure();
 };

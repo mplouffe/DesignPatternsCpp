@@ -13,3 +13,8 @@ ItemType Item::GetType()
 {
 	return type;
 }
+
+bool Item::operator==(const Item& rhs)
+{
+	return ((name == rhs.name) && (value == rhs.value) && (type == rhs.type));
+}

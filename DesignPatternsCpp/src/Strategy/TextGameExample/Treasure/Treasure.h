@@ -1,7 +1,5 @@
 #pragma once
 #include <iostream>
-#include "../Hunter/Loot.h"
-#include "../Hunter/Hunter.h"
 
 class Treasure
 {
@@ -10,6 +8,9 @@ private:
 	int value;
 public:
 	Treasure(std::string name, int value);
+	Treasure(const Treasure& copy);
 	~Treasure() { std::cout << "Treasure Destructor called." << std::endl; };
+	bool operator== (const Treasure& rhs);
 	int GetValue();
+	std::string GetName();
 };

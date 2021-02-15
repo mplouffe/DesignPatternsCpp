@@ -1,4 +1,5 @@
 #include "Hunter.h"
+#include <list>
 
 Hunter::Hunter()
 {
@@ -47,11 +48,18 @@ bool Hunter::dropTreasure(int treasureIndex)
 	Treasure* treasure = loot->removeTreasure(treasureIndex);
 	if (treasure != nullptr)
 	{
-		// delete treasure;
+		delete treasure;
 		return true;
 	}
 	else
 	{
 		return false;
 	}
+}
+
+void Hunter::listTreasure()
+{
+	std::cout << "Listing Treasures..." << std::endl;
+	auto treasures = loot->getTreasureList();
+	std::cout << "Treasures size: " << treasures->size() << std::endl;
 }
