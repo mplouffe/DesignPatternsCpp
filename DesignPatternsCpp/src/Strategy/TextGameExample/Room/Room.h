@@ -11,7 +11,7 @@ private:
 	Treasure* treasure;
 
 public:
-	Room(std::string name, const Monster* monster, const Treasure* treasure);
-	~Room() { };
+	Room(std::string name);
+	~Room();
 };
 

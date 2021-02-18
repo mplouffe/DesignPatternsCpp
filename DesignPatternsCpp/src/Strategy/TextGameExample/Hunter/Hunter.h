@@ -12,6 +12,7 @@ public:
 	~Hunter();
 	//virtual int attack() = 0;
 	//virtual bool takeDamage() = 0;
+	
 	bool collectTreasure(const Treasure&);
 	bool collectItem(const Item&);
 	int useItem(int);

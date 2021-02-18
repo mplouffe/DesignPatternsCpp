@@ -1,9 +1,11 @@
+#include <ctime>
 #include "Strategy\DuckExample\Duck\MallardDuck.h"
 #include "Strategy\DuckExample\Duck\RedHeadDuck.h"
 #include "Strategy\DuckExample\Duck\DecoyDuck.h"
 #include "Strategy\DuckExample\Duck\RubberDuck.h"
 
 #include "Strategy\TextGameExample\Hunter\Hunter.h"
+#include "Strategy\TextGameExample\Treasure\TreasureFactory.h"
 
 void TestDuckStrategyPattern()
 {
@@ -35,17 +37,29 @@ void TestDuckStrategyPattern()
 void TestHunterLootSystem()
 {
 	Hunter* hunter = new Hunter();
-	Treasure* mandolin = new Treasure("Mandolin", 100);
-	hunter->collectTreasure(*mandolin);
+	TreasureFactory tFactory = TreasureFactory();
+	Treasure* treasure = tFactory.getTreasure(2);
+	hunter->collectTreasure(*treasure);
 	hunter->listTreasure();
+	std::cout << "after list treasure..." << std::endl;
 	hunter->dropTreasure(0);
 	hunter->listTreasure();
 	std::cout << "End of method" << std::endl;
 	delete hunter;
 }
 
+void TestRndLoop()
+{
+	for (int i = 0; i < 100; i++)
+	{
+		int value = rand() % 2;
+		std::cout << value << std::endl;
+	}
+}
+
 int main()
 {
+	srand(std::time(0));
 	TestHunterLootSystem();
 	return 0;
 }

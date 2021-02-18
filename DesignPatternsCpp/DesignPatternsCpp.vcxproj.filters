@@ -57,6 +57,18 @@
     <ClCompile Include="src\Strategy\TextGameExample\Hunter\Hunter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Managers\InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Managers\DungeonMaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\TreasureFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Strategy\TextGameExample\Treasure\ItemFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Cardgame.h">
@@ -123,6 +135,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Strategy\TextGameExample\Hunter\Loot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Managers\InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Managers\DungeonMaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\TreasureFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strategy\TextGameExample\Treasure\ItemFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

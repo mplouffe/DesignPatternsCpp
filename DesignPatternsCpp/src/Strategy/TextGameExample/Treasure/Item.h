@@ -16,4 +16,5 @@ public:
 	bool operator== (const Item& rhs);
 	int GetPropertyValue();
 	ItemType GetType();
+	void GetItemDescription();
 };
