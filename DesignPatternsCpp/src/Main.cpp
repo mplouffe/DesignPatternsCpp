@@ -6,6 +6,7 @@
 
 #include "Strategy\TextGameExample\Hunter\Hunter.h"
 #include "Strategy\TextGameExample\Treasure\TreasureFactory.h"
+#include "Strategy\TextGameExample\Treasure\ItemFactory.h"
 
 void TestDuckStrategyPattern()
 {
@@ -48,18 +49,33 @@ void TestHunterLootSystem()
 	delete hunter;
 }
 
+void TestItemSystem()
+{
+	Hunter* hunter = new Hunter();
+	ItemFactory iFactory = ItemFactory();
+	Item* item = iFactory.getItem(1);
+	hunter->collectItem(*item);
+	hunter->listItems();
+	std::cout << "after list treasure..." << std::endl;
+	hunter->dropItem(0);
+	hunter->listItems();
+	std::cout << "End of method" << std::endl;
+	delete hunter;
+
+}
+
 void TestRndLoop()
 {
-	for (int i = 0; i < 100; i++)
-	{
-		int value = rand() % 2;
-		std::cout << value << std::endl;
-	}
+		for (int i = 0; i < 100; i++)
+		{
+			int value = rand() % 2;
+			std::cout << value << std::endl;
+		}
 }
 
 int main()
 {
 	srand(std::time(0));
-	TestHunterLootSystem();
+	TestItemSystem();
 	return 0;
 }

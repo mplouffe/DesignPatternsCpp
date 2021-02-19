@@ -109,13 +109,13 @@ void Loot::listItems()
 	{
 		std::cout << "Listing Items..." << std::endl;
 		std::cout << "--------------------" << std::endl;
-		std::cout << "#) Name: Type: Value" << std::endl;
+		std::cout << "#) Name:\t\tType:\t\tValue" << std::endl;
 		int i = 0;
 		int totalValue = 0;
 		std::list<Item>& itemsRef = *items;
 		for (std::list<Item>::iterator it = itemsRef.begin(); it != itemsRef.end(); it++)
 		{
-			std::cout << i++ << ") " << it->GetName() << ": " << it->GetType() << ": " << it->GetValue() << std::endl;
+			std::cout << i++ << ") " << it->GetName() << "\t\t" << it->GetType() << "\t\t" << it->GetValue() << std::endl;
 			totalValue += it->GetValue();
 		}
 		std::cout << "---------------------" << std::endl;

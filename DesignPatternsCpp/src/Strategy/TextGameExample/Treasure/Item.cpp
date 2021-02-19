@@ -20,9 +20,22 @@ int Item::GetPropertyValue()
 	return propertyValue;
 }
 
-ItemType Item::GetType()
+std::string Item::GetType()
 {
-	return type;
+	std::string typeString;
+	switch (type)
+	{
+		case ItemType::damage:
+			typeString = "Damage";
+			break;
+		case ItemType::heal:
+			typeString = "Heal";
+			break;
+		default:
+			typeString = "None";
+			break;
+	}
+	return typeString;
 }
 
 void Item::GetItemDescription()

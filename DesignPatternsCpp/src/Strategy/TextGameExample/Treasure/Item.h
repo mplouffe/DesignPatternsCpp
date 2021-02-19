@@ -15,6 +15,6 @@ public:
 	~Item() { };
 	bool operator== (const Item& rhs);
 	int GetPropertyValue();
-	ItemType GetType();
+	std::string GetType();
 	void GetItemDescription();
 };
