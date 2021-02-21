@@ -4,9 +4,11 @@
 #include "Strategy\DuckExample\Duck\DecoyDuck.h"
 #include "Strategy\DuckExample\Duck\RubberDuck.h"
 
-#include "Strategy\TextGameExample\Hunter\Hunter.h"
-#include "Strategy\TextGameExample\Treasure\TreasureFactory.h"
-#include "Strategy\TextGameExample\Treasure\ItemFactory.h"
+#include "TextGameExample\Hunter\Hunter.h"
+#include "TextGameExample\Treasure\TreasureFactory.h"
+#include "TextGameExample\Treasure\ItemFactory.h"
+
+#include "TextGameExample\Managers\InputManager.h"
 
 void TestDuckStrategyPattern()
 {
@@ -64,18 +66,16 @@ void TestItemSystem()
 
 }
 
-void TestRndLoop()
+void TestInputManager()
 {
-		for (int i = 0; i < 100; i++)
-		{
-			int value = rand() % 2;
-			std::cout << value << std::endl;
-		}
+	InputManager inputManager = InputManager();
+	int value = inputManager.getInput(5);
+	std::cout << "value returned: " << value << std::endl;
 }
 
 int main()
 {
 	srand(std::time(0));
-	TestItemSystem();
+	TestInputManager();
 	return 0;
 }

@@ -1,17 +1,15 @@
 #pragma once
 #include <vector>
 #include "Loot.h"
+#include "../Character/Character.h"
 
-class Hunter
+class Hunter : public Character
 {
 private:
-	int hitPoints;
 	Loot* loot;
 public:
 	Hunter();
 	~Hunter();
-	//virtual int attack() = 0;
-	//virtual bool takeDamage() = 0;
 	
 	bool collectTreasure(const Treasure&);
 	bool collectItem(const Item&);

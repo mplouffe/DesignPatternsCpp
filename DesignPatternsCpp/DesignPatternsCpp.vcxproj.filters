@@ -39,34 +39,40 @@
     <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\TextGame.cpp">
+    <ClCompile Include="src\TextGameExample\Hunter\Hunter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Room\Room.cpp">
+    <ClCompile Include="src\TextGameExample\Hunter\Loot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Treasure.cpp">
+    <ClCompile Include="src\TextGameExample\Managers\DungeonMaster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Loot.cpp">
+    <ClCompile Include="src\TextGameExample\Managers\InputManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Treasure\Item.cpp">
+    <ClCompile Include="src\TextGameExample\Room\Room.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Hunter\Hunter.cpp">
+    <ClCompile Include="src\TextGameExample\Treasure\Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Managers\InputManager.cpp">
+    <ClCompile Include="src\TextGameExample\Treasure\ItemFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Managers\DungeonMaster.cpp">
+    <ClCompile Include="src\TextGameExample\Treasure\Treasure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Treasure\TreasureFactory.cpp">
+    <ClCompile Include="src\TextGameExample\Treasure\TreasureFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Strategy\TextGameExample\Treasure\ItemFactory.cpp">
+    <ClCompile Include="src\TextGameExample\TextGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextGameExample\Bork\Bork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextGameExample\Bork\BorkFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -116,37 +122,43 @@
     <ClInclude Include="src\Strategy\DuckExample\Duck\RubberDuck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\TextGame.h">
+    <ClInclude Include="src\TextGameExample\Hunter\Hunter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Monster\Monster.h">
+    <ClInclude Include="src\TextGameExample\Hunter\Loot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Treasure.h">
+    <ClInclude Include="src\TextGameExample\Managers\DungeonMaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Hunter.h">
+    <ClInclude Include="src\TextGameExample\Managers\InputManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Treasure\Item.h">
+    <ClInclude Include="src\TextGameExample\Room\Room.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Room\Room.h">
+    <ClInclude Include="src\TextGameExample\Treasure\Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Hunter\Loot.h">
+    <ClInclude Include="src\TextGameExample\Treasure\ItemFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Managers\InputManager.h">
+    <ClInclude Include="src\TextGameExample\Treasure\Treasure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Managers\DungeonMaster.h">
+    <ClInclude Include="src\TextGameExample\Treasure\TreasureFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Treasure\TreasureFactory.h">
+    <ClInclude Include="src\TextGameExample\TextGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Strategy\TextGameExample\Treasure\ItemFactory.h">
+    <ClInclude Include="src\TextGameExample\Character\Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextGameExample\Bork\Bork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextGameExample\Bork\BorkFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
