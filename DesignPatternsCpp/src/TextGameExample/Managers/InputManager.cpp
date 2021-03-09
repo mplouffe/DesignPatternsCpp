@@ -30,10 +30,8 @@ int InputManager::getInput(int maxValue)
 				hasValidInput = true;
 			}
 		}
-		else
-		{
-			stringStream->clear();
-		}
+		
+		stringStream->clear();
 
 		if (!hasValidInput)
 		{

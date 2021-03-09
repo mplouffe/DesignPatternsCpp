@@ -25,10 +25,10 @@ std::string Item::GetType()
 	std::string typeString;
 	switch (type)
 	{
-		case ItemType::damage:
+		case ItemType::negative:
 			typeString = "Damage";
 			break;
-		case ItemType::heal:
+		case ItemType::positive:
 			typeString = "Heal";
 			break;
 		default:
@@ -41,7 +41,7 @@ std::string Item::GetType()
 void Item::GetItemDescription()
 {
 	std::string descriptionEnding = "revive and refresh.";
-	if (type == ItemType::damage)
+	if (type == ItemType::negative)
 	{
 		descriptionEnding = "do some damage.";
 	}

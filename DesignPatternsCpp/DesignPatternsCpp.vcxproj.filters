@@ -42,9 +42,6 @@
     <ClCompile Include="src\TextGameExample\Hunter\Hunter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\TextGameExample\Hunter\Loot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\TextGameExample\Managers\DungeonMaster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,6 +70,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\TextGameExample\Bork\BorkFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextGameExample\Character\Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextGameExample\Treasure\Loot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -125,9 +128,6 @@
     <ClInclude Include="src\TextGameExample\Hunter\Hunter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\TextGameExample\Hunter\Loot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\TextGameExample\Managers\DungeonMaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -159,6 +159,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\TextGameExample\Bork\BorkFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextGameExample\Treasure\Loot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

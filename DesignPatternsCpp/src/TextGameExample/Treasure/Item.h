@@ -2,7 +2,7 @@
 #include <string>
 #include "Treasure.h"
 
-enum ItemType { heal, damage };
+enum ItemType { positive, negative };
 
 class Item : public Treasure
 {

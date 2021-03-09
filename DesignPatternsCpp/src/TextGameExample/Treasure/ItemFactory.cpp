@@ -41,11 +41,11 @@ Item* ItemFactory::getItem(int level)
 	ItemType itemType;
 	if (typeRnd >= 1)
 	{
-		itemType = ItemType::heal;
+		itemType = ItemType::positive;
 	}
 	else
 	{
-		itemType = ItemType::damage;
+		itemType = ItemType::negative;
 	}
 
 	return new Item(name, value, itemType, propertyValue);

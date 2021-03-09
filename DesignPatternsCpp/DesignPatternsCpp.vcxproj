@@ -140,10 +140,11 @@
   <ItemGroup>
     <ClCompile Include="src\TextGameExample\Bork\Bork.cpp" />
     <ClCompile Include="src\TextGameExample\Bork\BorkFactory.cpp" />
+    <ClCompile Include="src\TextGameExample\Character\Character.cpp" />
     <ClCompile Include="src\TextGameExample\Managers\DungeonMaster.cpp" />
     <ClCompile Include="src\TextGameExample\Managers\InputManager.cpp" />
     <ClCompile Include="src\TextGameExample\Hunter\Hunter.cpp" />
-    <ClCompile Include="src\TextGameExample\Hunter\Loot.cpp" />
+    <ClCompile Include="src\TextGameExample\Treasure\Loot.cpp" />
     <ClCompile Include="src\TextGameExample\Room\Room.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\DecoyDuck.cpp" />
@@ -163,7 +164,7 @@
     <ClInclude Include="src\TextGameExample\Character\Character.h" />
     <ClInclude Include="src\TextGameExample\Managers\DungeonMaster.h" />
     <ClInclude Include="src\TextGameExample\Managers\InputManager.h" />
-    <ClInclude Include="src\TextGameExample\Hunter\Loot.h" />
+    <ClInclude Include="src\TextGameExample\Treasure\Loot.h" />
     <ClInclude Include="src\TextGameExample\Hunter\Hunter.h" />
     <ClInclude Include="src\TextGameExample\Bork\Bork.h" />
     <ClInclude Include="src\TextGameExample\Bork\BorkFactory.h" />

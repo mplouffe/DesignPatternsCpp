@@ -37,7 +37,7 @@ void TestDuckStrategyPattern()
 	delete duck04;
 }
 
-void TestHunterLootSystem()
+void TestLootSystem()
 {
 	Hunter* hunter = new Hunter();
 	TreasureFactory tFactory = TreasureFactory();
@@ -66,16 +66,43 @@ void TestItemSystem()
 
 }
 
-void TestInputManager()
+void PrintMenu()
 {
-	InputManager inputManager = InputManager();
-	int value = inputManager.getInput(5);
-	std::cout << "value returned: " << value << std::endl;
+	std::cout << "**** Testing Systems ****" << std::endl;
+	std::cout << "0) Quit" << std::endl;
+	std::cout << "1) Test Duck Strategy Pattern" << std::endl;
+	std::cout << "2) Test Loot System" << std::endl;
+	std::cout << "3) Test Item System" << std::endl;
 }
 
 int main()
 {
+	InputManager inputManager = InputManager();
 	srand(std::time(0));
-	TestInputManager();
+
+
+	int value;
+	do
+	{
+		PrintMenu();
+		value = inputManager.getInput(3);
+
+		std::cout << "**********" << std::endl;
+		switch (value)
+		{
+		case 1:
+			TestDuckStrategyPattern();
+			break;
+		case 2:
+			TestLootSystem();
+			break;
+		case 3:
+			TestItemSystem();
+			break;
+		}
+		std::cout << "**********" << std::endl;
+	} while (value != 0);
+
+	std::cout << "End of Line" << std::endl;
 	return 0;
 }

@@ -20,5 +20,5 @@ BorkFactory::~BorkFactory()
 
 Bork* BorkFactory::getBork(int level)
 {
-
+	return new Bork("Chewie", 1000, 1000, 1000);
 }

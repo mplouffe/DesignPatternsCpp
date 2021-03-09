@@ -1,13 +1,13 @@
 #pragma once
 #include <vector>
-#include "../Monster/Monster.h"
+#include "../Bork/Bork.h"
 #include "../Treasure/Treasure.h"
 
 class Room
 {
 private:
 	std::string name;
-	Monster* monster;
+	Bork* bork;
 	Treasure* treasure;
 
 public:
