@@ -30,4 +30,5 @@ public:
 	bool dropItem(int);
 	void listTreasure();
 	void listItems();
+	std::string getName();
 };

@@ -20,5 +20,9 @@ BorkFactory::~BorkFactory()
 
 Bork* BorkFactory::getBork(int level)
 {
-	return new Bork("Chewie", 1000, 1000, 1000);
+
+	int descriptorRnd = rand() % (borkTypes->size() - 1);
+	std::string name = borkTypes->at(descriptorRnd) + " Bork";
+
+	return new Bork(name, 1000, 1000, 1000);
 }

@@ -62,3 +62,8 @@ void Character::listItems()
 	loot->listItems();
 	std::cout << std::endl;
 }
+
+std::string Character::getName()
+{
+	return name;
+}

@@ -10,6 +10,8 @@
 
 #include "TextGameExample\Managers\InputManager.h"
 
+#include "TextGameExample\Bork\BorkFactory.h"
+
 void TestDuckStrategyPattern()
 {
 	Duck* duck01 = new MallardDuck();
@@ -66,6 +68,14 @@ void TestItemSystem()
 
 }
 
+void TestBorkFactory()
+{
+	BorkFactory borkFactory = BorkFactory();
+	Bork* bork = borkFactory.getBork(1);
+	std::cout << "You got a " << bork->getName() << std::endl;
+	delete bork;
+}
+
 void PrintMenu()
 {
 	std::cout << "**** Testing Systems ****" << std::endl;
@@ -73,6 +83,7 @@ void PrintMenu()
 	std::cout << "1) Test Duck Strategy Pattern" << std::endl;
 	std::cout << "2) Test Loot System" << std::endl;
 	std::cout << "3) Test Item System" << std::endl;
+	std::cout << "4) Test Bork Factory" << std::endl;
 }
 
 int main()
@@ -85,7 +96,7 @@ int main()
 	do
 	{
 		PrintMenu();
-		value = inputManager.getInput(3);
+		value = inputManager.getInput(4);
 
 		std::cout << "**********" << std::endl;
 		switch (value)
@@ -98,6 +109,9 @@ int main()
 			break;
 		case 3:
 			TestItemSystem();
+			break;
+		case 4:
+			TestBorkFactory();
 			break;
 		}
 		std::cout << "**********" << std::endl;
