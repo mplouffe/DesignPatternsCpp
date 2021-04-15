@@ -138,8 +138,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\TextGameExample\Bork\Bork.cpp" />
-    <ClCompile Include="src\TextGameExample\Bork\BorkFactory.cpp" />
+    <ClCompile Include="src\BorkCatcher\Bork\Bork.cpp" />
+    <ClCompile Include="src\BorkCatcher\Bork\BorkFactory.cpp" />
     <ClCompile Include="src\TextGameExample\Character\Character.cpp" />
     <ClCompile Include="src\TextGameExample\Managers\DungeonMaster.cpp" />
     <ClCompile Include="src\TextGameExample\Managers\InputManager.cpp" />
@@ -149,8 +149,6 @@
     <ClCompile Include="src\Strategy\DuckExample\Duck\RubberDuck.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\DecoyDuck.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\RedHeadDuck.cpp" />
-    <ClCompile Include="src\Grid.cpp" />
-    <ClCompile Include="src\Space.cpp" />
     <ClCompile Include="src\Strategy\DuckExample\Duck\MallardDuck.cpp" />
     <ClCompile Include="src\Cardgame.cpp" />
     <ClCompile Include="src\Main.cpp" />
@@ -166,8 +164,8 @@
     <ClInclude Include="src\TextGameExample\Managers\InputManager.h" />
     <ClInclude Include="src\TextGameExample\Treasure\Loot.h" />
     <ClInclude Include="src\TextGameExample\Hunter\Hunter.h" />
-    <ClInclude Include="src\TextGameExample\Bork\Bork.h" />
-    <ClInclude Include="src\TextGameExample\Bork\BorkFactory.h" />
+    <ClInclude Include="src\BorkCatcher\Bork\Bork.h" />
+    <ClInclude Include="src\BorkCatcher\Bork\BorkFactory.h" />
     <ClInclude Include="src\TextGameExample\Room\Room.h" />
     <ClInclude Include="src\Strategy\DuckExample\Duck\RubberDuck.h" />
     <ClInclude Include="src\Strategy\DuckExample\Duck\DecoyDuck.h" />
@@ -177,8 +175,6 @@
     <ClInclude Include="src\Strategy\DuckExample\Fly\FlyNoWay.h" />
     <ClInclude Include="src\Strategy\DuckExample\Fly\FlyWithWings.h" />
     <ClInclude Include="src\Strategy\DuckExample\Fly\FlyBehavior.h" />
-    <ClInclude Include="src\Grid.h" />
-    <ClInclude Include="src\Space.h" />
     <ClInclude Include="src\Strategy\DuckExample\Quack\MuteQuack.h" />
     <ClInclude Include="src\Strategy\DuckExample\Quack\Quack.h" />
     <ClInclude Include="src\Strategy\DuckExample\Quack\QuackBehavior.h" />
